@@ -85,6 +85,46 @@
       </div>
     </nav>
 
+    <form
+      class="container row align-items-center mt-2"
+      action="/song"
+      method="get"
+    >
+      <div class="form-floating col-10">
+        <input
+          type="text"
+          class="form-control"
+          name="title"
+          id="title"
+          placeholder="노래 제목"
+        />
+        <label for="title">좋아하는 노래</label>
+      </div>
+      <div class="col-1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+    <form
+      class="container row align-items-center mt-2"
+      action="/singer"
+      method="post"
+    >
+      <div class="form-floating col-10">
+        <input
+          type="text"
+          class="form-control"
+          name="singer"
+          id="singer"
+          placeholder="가수 이름"
+        />
+        <label for="singer">좋아하는 가수</label>
+      </div>
+      <div class="col-1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+
     <div class="text-center">
       <img class="card-img w-50 m-3" src="/images/scene.svg" />
     </div>
