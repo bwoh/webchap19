@@ -32,6 +32,11 @@ app.post("/singer", (req, res) => {
   );
 });
 
+app.post("/login", (req, res) => {
+  const enc = req.body.passwordEnc;
+  res.send("암호화된 패스워드: " + enc);
+});
+
 app.listen(port, () => {
   console.log(`서버 실행 (${port})`);
 });
